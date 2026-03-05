@@ -1,0 +1,144 @@
+/* =========================
+   GLOBAL STYLE
+========================= */
+
+body{
+    background-color:#f5f6fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2,h3{
+    font-weight:600;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    padding:12px 20px;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table{
+    background:white;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+.table th{
+    background:#343a40;
+    color:white;
+    text-align:center;
+}
+
+.table td{
+    vertical-align:middle;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn{
+    border-radius:6px;
+}
+
+.btn-sm{
+    padding:4px 10px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+    border:none;
+    border-radius:10px;
+}
+
+
+/* =========================
+   MEMBER PHOTO
+========================= */
+
+.member-photo-index{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid #ddd;
+}
+
+.member-photo-edit{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid #ddd;
+}
+
+/* =========================
+   STATUS BADGE
+========================= */
+
+.badge{
+    font-size:12px;
+    padding:6px 10px;
+}
+
+
+/* =========================
+   SCANNER PAGE
+========================= */
+
+#reader{
+    max-width:500px;
+    margin:auto;
+}
+
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width:576px){
+
+    h2{
+        font-size:1.4rem;
+        text-align:center;
+    }
+
+    .btn-primary{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    table td, table th{
+        font-size:0.8rem;
+    }
+
+}
+
+.badge{
+font-size:12px;
+padding:6px 10px;
+}
+
+.table{
+background:white;
+border-radius:8px;
+overflow:hidden;
+}
+
+#reader{
+max-width:350px;
+margin:auto;
+}
