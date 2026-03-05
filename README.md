@@ -181,7 +181,7 @@ yg-gym/
 ![Scan QR](screenshots/scan-qr.png)
 
 ### Attendance
-![Attendance](screenshots/attendance.png)
+![Attendance](screenshots/attendance-list.png)
 
 ---
 
