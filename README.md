@@ -1,12 +1,14 @@
 # 🏋️‍♂️ YG Gym — Member & Attendance System
 
-![Laravel](https://img.shields.io/badge/Laravel-12-red)
-![PHP](https://img.shields.io/badge/PHP-8.2-blue)
-![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple)
+![Laravel](https://img.shields.io/badge/Laravel-12-red?style=for-the-badge)
+![PHP](https://img.shields.io/badge/PHP-8.2-blue?style=for-the-badge)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple?style=for-the-badge)
+![jQuery](https://img.shields.io/badge/jQuery-3.7-blue?style=for-the-badge)
+![Vite](https://img.shields.io/badge/Vite-Bundler-yellow?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
-Aplikasi ini dibuat untuk **mengelola member gym dan absensi menggunakan QR Code**.
-Sistem memungkinkan admin gym untuk mencatat kehadiran member secara otomatis dengan melakukan **scan QR Code pada kartu member**.
+Aplikasi manajemen gym berbasis Laravel yang memungkinkan pengelolaan member, absensi otomatis menggunakan QR Code, serta monitoring status membership secara real-time.
 
 ---
 
@@ -23,12 +25,23 @@ Sistem memungkinkan admin gym untuk mencatat kehadiran member secara otomatis de
 
 ---
 
+# ✨ Highlights
+
+- Sistem absensi otomatis berbasis QR Code
+- UI modern menggunakan Bootstrap 5
+- Interaksi cepat dengan jQuery
+- Struktur project clean & scalable
+
+---
+
 # 🧰 Teknologi yang Digunakan
 
 * PHP 8.2
 * Laravel 12
 * MySQL (XAMPP)
 * Bootstrap 5
+* jQuery
+* Vite
 * HTML5 QR Code Scanner
 * Bacon QR Code
 
@@ -49,6 +62,7 @@ cd yg-gym
 
 ```bash
 composer install
+npm install
 ```
 
 ---
@@ -101,6 +115,7 @@ php artisan migrate
 ## 7️⃣ Jalankan Server
 
 ```bash
+npm run dev
 php artisan serve
 ```
 
@@ -156,7 +171,7 @@ yg-gym/
 │   ├── member-detail.png
 │   ├── scan-qr.png
 │   ├── attendance-list.png
-│   └── succes-scan.png
+│   └── success-scan.png
 └── README.md
 ```
 
