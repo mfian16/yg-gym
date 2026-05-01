@@ -57,17 +57,6 @@
 </div>
 <input type="hidden" name="foto" id="fotoCropped">
 <div class="text-center mt-3">
-<script>
-document.querySelector("form").addEventListener("submit",function(e){
-if(cropper){
-let canvas = cropper.getCroppedCanvas({
-width:300,
-height:400
-});
-document.getElementById("fotoCropped").value = canvas.toDataURL("image/jpeg");
-}
-});
-</script>
 <button class="btn btn-success px-4">
 Simpan
 </button>
@@ -84,53 +73,5 @@ Kembali
 
 </div>
 </div>
-
-<script>
-document.getElementById('paket').addEventListener('change', function() {
-
-const masaAktifInput = document.getElementById('masa_aktif');
-const today = new Date();
-
-today.setDate(today.getDate() + 29);
-
-const year = today.getFullYear();
-const month = String(today.getMonth()+1).padStart(2,'0');
-const day = String(today.getDate()).padStart(2,'0');
-
-masaAktifInput.value = `${year}-${month}-${day}`;
-
-});
-
-let cropper;
-
-document.getElementById('fotoInput').addEventListener('change', function(e){
-
-let file = e.target.files[0];
-
-let reader = new FileReader();
-
-reader.onload = function(event){
-
-let img = document.getElementById('preview');
-
-img.src = event.target.result;
-
-img.style.display = 'block';
-
-if(cropper){
-cropper.destroy();
-}
-
-cropper = new Cropper(img,{
-aspectRatio: 3/4,
-viewMode:1
-});
-
-}
-
-reader.readAsDataURL(file);
-
-});
-</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js"></script>
 @endsection

@@ -16,23 +16,27 @@ Absensi gagal dilakukan.
 </div>
 @endif
 
-<div class="mb-3">
-<a href="{{ route('attendance.scan') }}"
-   class="btn btn-success mb-3">
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+        <a href="{{ route('attendance.scan') }}" class="btn btn-success">
+            Scan Absensi
+        </a>
 
-Scan Absensi
+        <a href="{{ route('member.index') }}" class="btn btn-primary">
+            Daftar Member
+        </a>
+    </div>
 
-</a>
-
-<a href="{{ route('member.index') }}"
-   class="btn btn-primary mb-3">
-
-Daftar Member
-
-</a>
-
+    <div style="width: 300px;">
+        <div class="input-group">
+            <span class="input-group-text">🔍</span>
+            <input type="text"
+                   class="form-control search-table"
+                   data-target="#tableAttendance"
+                   placeholder="Cari absensi...">
+        </div>
+    </div>
 </div>
-
 @if(request('success'))
 <div class="alert alert-success">
 Absensi berhasil dilakukan.

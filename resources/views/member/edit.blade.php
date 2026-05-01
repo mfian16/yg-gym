@@ -75,24 +75,4 @@ value="{{ old('masa_aktif', $member->masa_aktif ? $member->masa_aktif->format('Y
 </form>
 </div>
 </div>
-<!-- Script otomatis hitung masa aktif -->
-<script>
-    document.getElementById('paket').addEventListener('change', function() {
-        const masaAktifInput = document.getElementById('masa_aktif');
-        const paket = this.value;
-        const today = new Date();
-
-        if (paket === 'Bulanan') {
-            today.setDate(today.getDate() + 29);
-        } else {
-            masaAktifInput.value = '';
-            return;
-        }
-
-        const year = today.getFullYear();
-        const month = String(today.getMonth() + 1).padStart(2, '0');
-        const day = String(today.getDate()).padStart(2, '0');
-        masaAktifInput.value = `${year}-${month}-${day}`;
-    });
-</script>
 @endsection

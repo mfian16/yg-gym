@@ -23,7 +23,7 @@ body{
 }
 
 .photo{
-    width:120px;
+    width:160px;
     height:160px;
     object-fit:cover;
     border-radius:6px;

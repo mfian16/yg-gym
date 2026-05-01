@@ -9,13 +9,25 @@
 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
 </div>
 @endif
-<div class="mb-3">
-<a href="{{ route('member.create') }}" class="btn btn-primary mb-3">
-Tambah Member
-</a>
-<a href="{{ route('attendance.index') }}" class="btn btn-success mb-3">
-Daftar Absensi
-</a>
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+        <a href="{{ route('member.create') }}" class="btn btn-primary">
+            Tambah Member
+        </a>
+
+        <a href="{{ route('attendance.index') }}" class="btn btn-success">
+            Daftar Absensi
+        </a>
+    </div>
+    <div style="width: 300px;">
+        <div class="input-group">
+            <span class="input-group-text">🔍</span>
+            <input type="text"
+                   class="form-control search-table"
+                   data-target="#tableMember"
+                   placeholder="Cari member...">
+        </div>
+    </div>
 </div>
 <table class="table table-hover text-center">
 
@@ -71,16 +83,13 @@ Lihat
    class="btn btn-info btn-sm">
 Print Kartu
 </a>
-<form action="{{ route('member.destroy',$member->id) }}" 
-      method="POST" 
-      style="display:inline">
-@csrf
-@method('DELETE')
-<button type="submit"
-        class="btn btn-danger btn-sm"
-        onclick="return confirm('Yakin ingin menghapus member ini?')">
-Hapus
-</button>
+<form action="{{ route('member.destroy', $member->id) }}" method="POST" class="d-inline form-delete">
+    @csrf
+    @method('DELETE')
+
+    <button type="submit" class="btn btn-danger btn-sm">
+        Hapus
+    </button>
 </form>
 </div>
 </td>
