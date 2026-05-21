@@ -204,6 +204,6 @@ yg-gym/
 
 Nama: **Muhammad Fiqih Irfiansyah**
 
-Backend Developer Enthusiast
+Junior Web Developer Enthusiast
 
 ---
