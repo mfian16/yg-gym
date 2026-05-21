@@ -45,7 +45,7 @@ Absensi berhasil dilakukan.
 
 <div class="table-responsive">
 
-<table class="table table-hover text-center align-middle shadow-sm">
+<table class="table table-hover text-center align-middle shadow-sm" id="tableAttendance">
 
 <thead class="table-dark">
 
