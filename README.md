@@ -10,11 +10,18 @@
 
 Aplikasi manajemen gym berbasis Laravel yang memungkinkan pengelolaan member, absensi otomatis menggunakan QR Code, serta monitoring status membership secara real-time.
 
+# 🎯 Latar Belakang
+
+Banyak bisnis gym masih mengelola absensi member secara manual, sehingga proses pencatatan menjadi kurang efisien dan monitoring status membership menjadi lebih sulit.
+
+Project ini dibuat sebagai solusi digital untuk membantu pengelolaan member gym melalui sistem absensi otomatis berbasis QR Code, validasi masa aktif membership, serta pencatatan riwayat absensi secara terintegrasi.
+
 ---
 
 # 🚀 Fitur Utama
 
-✅ Manajemen Member Gym
+✅ CRUD member management
+✅ Search member & attendance data
 ✅ Upload foto member
 ✅ Generate QR Code otomatis untuk setiap member
 ✅ Scan QR Code untuk absensi member
@@ -28,8 +35,10 @@ Aplikasi manajemen gym berbasis Laravel yang memungkinkan pengelolaan member, ab
 # ✨ Highlights
 
 - Sistem absensi otomatis berbasis QR Code
-- UI modern menggunakan Bootstrap 5
-- Interaksi cepat dengan jQuery
+- QR Code-based attendance automation
+- Membership status validation (Active / Expired)
+- Member card PDF generation
+- Real-time search for member and attendance data
 - Struktur project clean & scalable
 
 ---
@@ -134,6 +143,7 @@ Buka browser
 | Attendance Scanner    | Scan QR untuk absensi           |
 | Membership Validation | Cek masa aktif member           |
 | Attendance History    | Riwayat absensi member          |
+| Search Feature        | Pencarian member & absensi secara real-time|
 
 ---
 
